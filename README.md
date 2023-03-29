@@ -1,6 +1,6 @@
 ## FA-Auth-Service
 
-### Auth-Service for the Food Arcadia web application.
+### Auth-Service for the Food Arcadia web application
 
 This Auth-Service includes all authentication and authorization logics for Food-Arcadia.
 
