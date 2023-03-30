@@ -1,0 +1,47 @@
+#server:
+#  port: 4000
+#  servlet:
+#    context-path: /
+#
+#  tomcat:
+#    accept-count: 100
+#    max-connections: 100
+#    threads:
+#      max: 50
+#      min-spare: 10
+#
+#spring:
+#  application:
+#    name: auth-service
+#  cloud:
+#    kubernetes:
+#      enabled: true
+#      loadbalancer:
+#        enabled: true
+#      discovery:
+#        enabled: false
+#      reload:
+#        enabled: true
+#        mode: event
+#        monitoring-config-maps: true
+#        strategy: refresh
+#
+#management:
+#  endpoint:
+#    restart:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#          - loggers
+#          - health
+#          - caches
+#          - liveness
+#          - prometheus
+#          - env
+#          - configprops
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#
